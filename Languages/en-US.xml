@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
-	<creator>
-		<name>Soeteman software</name>
-		<link>https://github.com/rsoeteman/cmsimport-resources</link>
-	</creator>
-	<area alias="cmsimportGeneral">
-		<key alias="title">CMSImport V4</key>
-		<key alias="treeTitle">CMSImport</key>
-		<key alias="proEditionMessage">This is the free edition of CMSImport which is limited in functionality.<p>Check out <a href="https://soetemansoftware.nl/cmsimport/features/" target="new">our website</a> for all the differences or <a href="https://soetemansoftware.nl/cmsimport/purchase/" target="new">buy the pro version</a> today!</p>
+  <creator>
+    <name>Soeteman software</name>
+    <link>https://github.com/rsoeteman/cmsimport-resources</link>
+  </creator>
+  <area alias="cmsimportGeneral">
+    <key alias="title">CMSImport V4</key>
+    <key alias="proEditionMessage">This is the free edition of CMSImport which is limited in functionality.<p>Check out <a href="https://soetemansoftware.nl/cmsimport/features/" target="new">our website</a> for all the differences or <a href="https://soetemansoftware.nl/cmsimport/purchase/" target="new">buy the pro version</a> today!</p>
 		</key>
-		<key alias="trialModeMessage">Thank you for trying CMSImport ! You are currently running in trial mode which means CMSImport functionality is limited. Install a license, or <a href="https://soetemansoftware.nl/cmsimport" target="_blank">buy a license</a> today to unlock all the features.</key>
-	</area>
+    <key alias="trialModeMessage">Thank you for trying CMSImport ! You are currently running in trial mode which means CMSImport functionality is limited. Install a license, or <a href="https://soetemansoftware.nl/cmsimport" target="_blank">buy a license</a> today to unlock all the features.</key>
+  </area>
+  <area alias="cmsImportTree">
+    <key alias="treeTitle">CMSImport</key>
+    <key alias="wizard">Import data</key>
+  </area>
 </language>
