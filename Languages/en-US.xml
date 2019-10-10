@@ -4,14 +4,170 @@
     <name>Soeteman software</name>
     <link>https://github.com/rsoeteman/cmsimport-resources</link>
   </creator>
+  <area alias="sections">
+    <key alias="cmsimport">Import</key>
+  </area>
+  <area alias="treeHeaders">
+    <key alias="cmsimport">CMSImport</key>
+  </area>
   <area alias="cmsimportGeneral">
     <key alias="title">CMSImport V4</key>
     <key alias="proEditionMessage">This is the free edition of CMSImport which is limited in functionality.<p>Check out <a href="https://soetemansoftware.nl/cmsimport/features/" target="new">our website</a> for all the differences or <a href="https://soetemansoftware.nl/cmsimport/purchase/" target="new">buy the pro version</a> today!</p>
 		</key>
     <key alias="trialModeMessage">Thank you for trying CMSImport ! You are currently running in trial mode which means CMSImport functionality is limited. Install a license, or <a href="https://soetemansoftware.nl/cmsimport" target="_blank">buy a license</a> today to unlock all the features.</key>
+    <key alias="requiredSuffix">Is required</key>
+    <key alias="invalidSuffix">Is invalid</key>
+    <key alias="notificationSaved">Saved</key>
+  </area>
+  <area alias="buttons">
+    <key alias="save">Save</key>
+    <key alias="next">Next</key>
+    <key alias="previous">Previous</key>
+    <key alias="import">Import</key>
   </area>
   <area alias="cmsImportTree">
     <key alias="treeTitle">CMSImport</key>
     <key alias="wizard">Import data</key>
+    <key alias="settings">Settings</key>
+    <key alias="loginEmailSettings">Login credentials email settings</key>
+    <key alias="schedulerEmailSettings">Scheduler result email settings</key>
+    <key alias="generalSettings">General settings</key>
+    <key alias="dashboardSettings">ImportDashboard settings</key>
   </area>
+  <area alias="wizardstepSelectImportProvider">
+    <key alias="title">CMSImport - Import data</key>
+    <key alias="intro">Select the type of information you want to import into Umbraco</key>
+    <key alias="importProvider">Import Data as</key>
+  </area>
+  <area alias="wizardstepSelectDataProvider">
+    <key alias="title">CMSImport - Select Datasource type</key>
+    <key alias="intro">Select the type of data you want to import into Umbraco</key>
+    <key alias="dataProvider">Datasource type</key>
+  </area>
+  <area alias="wizardstepSelectDataSource">
+    <key alias="title">CMSImport - Implement this title in your dataprovider </key>
+    <key alias="intro">Implement this in the data provider</key>
+  </area>
+  <area alias="wizardstepImportproviderOptions">
+    <key alias="title">CMSImport - Implement this title in your import provider </key>
+    <key alias="intro">Implement this in the Import provider</key>
+  </area>
+  <area alias="wizardstepCreateMapping">
+    <key alias="title">CMSImport - Create Mapping</key>
+    <key alias="intro">Map the database columns against the Umbraco properties. Use the plus sign for advanced options.</key>
+  </area>
+  <area alias="wizardstepConfirm">
+    <key alias="title">CMSImport - Confirm</key>
+    <key alias="intro">Please validate your input and press Next to import the data.</key>
+    <key alias="datasourceOptions">Datasource options</key>
+    <key alias="importOptions">Import options</key>
+    <key alias="mappingOptions">Mapping</key>
+  </area>
+  <area alias="wizardstepImportResult">
+    <key alias="title">CMSImport - Importing</key>
+  </area>
+  <area alias="datasourcePickerField">
+    <key alias="uploadLocalFile">Upload a local file</key>
+    <key alias="pickUrl">Specify an url</key>
+    <key alias="currentSelectedFile">Currently selected</key>
+    <key alias="uploadButton">Upload</key>
+    <key alias="authenticatedUrl">Url requires authentication</key>
+    <key alias="authenticatedUsername">Username</key>
+    <key alias="authenticatedPassword">Password</key>
+    <key alias="authenticatedoptionsRequired">Url requires authentication, specify Username and Password.</key>
+    <key alias="invalidUrl">Url is invalid.</key>
+  </area>
+  <area alias="excelDataProvider">
+    <key alias="wizardTitle">Import data from an excel file</key>
+    <key alias="wizardIntro">Upload an Excel file, or select the Url of an Excel file to import data form an Excel file. The Excel component works best when you don't have any formula's or formatting.</key>
+    <key alias="file">Select a file</key>
+    <key alias="worksheet">Select a worksheet</key>
+    <key alias="cantopenError">Can't open the uploaded Excel file</key>
+  </area>
+  <area alias="sqlDataProvider">
+    <key alias="wizardTitle">Import Sql server data</key>
+    <key alias="wizardIntro">Specify a connectionstring and SQL query to import data from Sqlserver (express)</key>
+    <key alias="connectionStringTitle">Connection String</key>
+    <key alias="sql">SQL Query</key>
+  </area>
+  <area alias="mailsettings">
+    <key alias="loginMailtitle">Login credentials email settings</key>
+    <key alias="schedulerMailtitle">Scheduler result email settings</key>
+    <key alias="fromAddress">From adress</key>
+    <key alias="subject">Email subject</key>
+    <key alias="emailTemplate">Email template</key>
+  </area>
+  <area alias="dasboardSettings">
+    <key alias="title">Configure import dashboard</key>
+    <key alias="intro">
+      <![CDATA[Below you can enable import definitions for certain user types. This functionality is different from the normal import wizard. The end user can only pick a configured Import definition and can only upload a datasource (only when a file datasource was used during creation of the import definition).]]>
+    </key>
+    <key alias="definitions">Import definitions</key>
+    <key alias="definitionsDescription">The import functionality allows users to import the selected import definitions</key>
+  </area>
+  <area alias="generalSettings">
+    <key alias="richTextTab">Richtext Media settings</key>
+    <key alias="pathSettingsTab">MediaPath Settings</key>
+    <key alias="mediaTypeTab">Media types</key>
+    <key alias="propertiesTab">Property settings</key>
+    <key alias="title">General settings</key>
+    <key alias="fileExtensions">Allowed extensions for file import</key>
+    <key alias="fileExtensionsDescription">Specify file extensions for files that must be imported when mapped against a Richtext property, other file extensions will be ignored. When mapped against a normal media picker all file extensions will be picked up.</key>
+    <key alias="domains">Parse media for the following domain urls</key>
+    <key alias="domainsDescription">CMSImport can only import files that ares stored in the rootfolder of Umbraco by default. Sometimes a full url is specified in a field that is mapped against a Richtext property. This setting allows you to specify domain urls, so url's containing these domain urls will be converted to relative paths, example http://www.cmsimport.com/ images/screenshot.png will be converted to /images/screenshot.png when you specify the domain url http://www.cmsimport.com/</key>
+    <key alias="mediaImportPath">Media import path</key>
+    <key alias="mediaImportPathDescription">Specify the virtual path where media can be found on disk.</key>
+    <key alias="folderStructure">Keep folder structure</key>
+    <key alias="folderStructureDescription">When checked CMSImport will keep the folder structure in the media library during import.</key>
+    <key alias="imageType">Image type</key>
+    <key alias="imageTypeDescription">Select the media type you use for importing images.</key>
+    <key alias="fileType">File type</key>
+    <key alias="fileTypeDescription">Select the media type you use for importing files.</key>
+    <key alias="folderType">Folder type</key>
+    <key alias="folderTypeDescription">Select the media type you use for creating folders.</key>
+    <key alias="ignoredProperties">Ignored properties</key>
+    <key alias="ignoredPropertiesDescription">Specify properties you don't want to map in the import process. By default some Member properties such as umbracoFailedPasswordAttempts are listed.</key>
+  </area>
+  <area alias="contentImportProvider">
+    <key alias="wizardTitle">Select content import options</key>
+    <key alias="wizardIntro">Specify the content import specific settings</key>
+    <key alias="location">Location</key>
+    <key alias="documentType">DocumentType</key>
+    <key alias="autopublish">Auto publish</key>
+    <key alias="enableUpdate">Enable content updates</key>
+    <key alias="enableUpdateDescription">Only uncheck this option when you don't have a primary key in your datasource.</key>
+    <key alias="updateAction">When the record already exists</key>
+    <key alias="primaryKey">Select primary key in datasource</key>
+    <key alias="deleteOldRecords">Delete old records</key>
+    <key alias="deleteOldRecordsDescription">When checked CMSImport will delete all records that were imported before but are not in the current data source. Check the manual for more details</key>
+    <key alias="recursiveImport">Enable recursive imports</key>
+    <key alias="recursiveForeignKey">Select foreign key for recursive import</key>
+    <key alias="nodenameProperty">Name</key>
+    <key alias="creadeDateProperty">Created</key>
+    <key alias="publishAtProperty">Publish at</key>
+    <key alias="unpublishAtProperty">Unpublish at</key>
+    <key alias="locationRequiredError">Location is required</key>
+  </area>
+  <area alias="memberImportProvider">
+    <key alias="wizardTitle">Select Member options</key>
+    <key alias="wizardIntro"></key>
+    <key alias="memberType">Member type</key>
+    <key alias="assignRoles">Automatic assign role(s)</key>
+    <key alias="updateAction">When member exists</key>
+    <key alias="deleteOldRecords">Delete old records</key>
+    <key alias="deleteOldRecordsDescription">When checked CMSImport will delete all records that were imported before but are not in the current data source. Check the manual for more details</key>
+    <key alias="autoGeneratePassword">Automatic generate password</key>
+    <key alias="sendCredentials">Send credentials via mail</key>
+    <key alias="nameMemberProperty">Name</key>
+    <key alias="loginMemberProperty">Login name</key>
+    <key alias="passwordMemberProperty">Password</key>
+    <key alias="emailMemberProperty">E-mail address</key>
+    <key alias="mapGenericPropertyCreateDate">Created</key>
+  </area>
+  
+  <area alias="importProviderOptions">
+    <key alias="actionUpdate">Update record</key>
+    <key alias="actionSkip">Skip record</key>
+  </area>
+
 </language>
