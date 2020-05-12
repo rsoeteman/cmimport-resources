@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+<language alias="en" intName="English (UK)" localName="English (UK)" lcid="" culture="en-GB">
   <creator>
     <name>Soeteman software</name>
     <link>https://github.com/rsoeteman/cmsimport-resources</link>
